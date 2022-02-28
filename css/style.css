@@ -1,5 +1,6 @@
 body {
-    background-color: #004aad;
+    /* background-color: #004aad; */
+    background-color: black;
     font-family: 'Chivo', sans-serif;
 }
 
@@ -33,10 +34,11 @@ body {
 }
 
 .projects {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .icon {
