@@ -34,3 +34,24 @@ body {
 
 }
 
+.icon {
+    border-radius: 8%;
+    width: 100px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    color: #dcff79;
+    font-weight: 900;
+    
+}
+
+.title-div {
+    margin-left: 20px;
+    margin-right: 80px;
+
+}
