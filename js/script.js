@@ -14,6 +14,20 @@ window.addEventListener("resize", resizeOps);
 const personal = document.querySelector('.personal');
 const projects = document.querySelector('.projects');
 const projectsBtn = document.querySelector('.projects-btn');
+const getInTouch = document.querySelector('.getintouch');
+const hiddenContacts = document.querySelector('.hidden-contacts');
+const arrow = document.querySelector('.arrow');
+
+
+
+
+getInTouch.addEventListener('click', () => {
+    hiddenContacts.style.display = 'block';
+})
+
+arrow.addEventListener('click', () => {
+    hiddenContacts.style.display = 'none';
+})
 
 projectsBtn.addEventListener('click', () => {
     personal.style.display = 'none';

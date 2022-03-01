@@ -72,8 +72,13 @@ h1 {
     flex-direction: row;
 }
 
+.hidden-contacts {
+    display: none;
+}
+
 .getintouch {
     height: 60px;
+    cursor: pointer;
 }
 
 .arrow {
@@ -103,20 +108,30 @@ svg {
     left: 0;
 }
 
+.project-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
 
-/* .icon:hover {
-    transform: scale(1.1);
-} */
-
-
+.project-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 h3 {
     color: #cfb9ff;
-    font-size: 1.5rem;;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
 
 p {
     color: #dcff79;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
 
 .project-icon {
