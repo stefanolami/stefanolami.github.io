@@ -99,13 +99,28 @@ svg {
 
 .projects {
     display: none;
-    flex-direction: column;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(13, 1fr);
     background-color: black;
     width: 100vw;
     margin: auto;
     position: absolute;
     top: 0;
     left: 0;
+    grid-template-areas: 
+    'science backtome1'
+    'science .'
+    'science puppy'
+    '. puppy'
+    'form puppy'
+    'form .'
+    'form photo'
+    '. photo'
+    'dashboard photo'
+    'dashboard .'
+    'dashboard directory'
+    '. directory'
+    'backtome2 directory';
 }
 
 .project-div {
@@ -123,23 +138,80 @@ svg {
 
 h3 {
     color: #cfb9ff;
-    font-size: 1.5rem;
-    margin-top: 30px;
+    font-size: 1.2rem;
+    margin-top: 15px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 p {
+    font-size: 0.8rem;
     color: #dcff79;
     margin-top: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .project-icon {
-    width: 40%;
+    width: 80%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .skills img {
-    width: 40px;
+    width: 25px;
     background-color: #cfb9ff;
     border: 2px solid black;
+}
+
+.back-to-me {
+    height: 50px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+/* GRID AREAS */
+
+#science-div {
+    grid-area: science;
+}
+
+#puppy-div {
+    grid-area: puppy;
+}
+
+#form-div {
+    grid-area: form;
+}
+
+#photo-div {
+    grid-area: photo;
+}
+
+#dashboard-div {
+    grid-area: dashboard;
+}
+
+#directory-div {
+    grid-area: directory;
+}
+
+#back-to-me-1 {
+    grid-area: backtome1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#back-to-me-2 {
+    grid-area: backtome2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }

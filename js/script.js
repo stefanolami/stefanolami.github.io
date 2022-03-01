@@ -17,9 +17,19 @@ const projectsBtn = document.querySelector('.projects-btn');
 const getInTouch = document.querySelector('.getintouch');
 const hiddenContacts = document.querySelector('.hidden-contacts');
 const arrow = document.querySelector('.arrow');
+const backToMe = document.querySelectorAll('.back-to-me');
 
 
 
+const showProjects = () => {
+    personal.style.display = 'none';
+    projects.style.display = 'grid';
+}
+
+const showPersonal = () =>  {
+    personal.style.display = 'flex';
+    projects.style.display = 'none';
+}
 
 getInTouch.addEventListener('click', () => {
     hiddenContacts.style.display = 'block';
@@ -30,11 +40,14 @@ arrow.addEventListener('click', () => {
 })
 
 projectsBtn.addEventListener('click', () => {
-    personal.style.display = 'none';
-    projects.style.display = 'flex';
+    showProjects();
 })
 
-
+backToMe.forEach(element => {
+    element.addEventListener('click', event => {
+      showPersonal();
+    })
+})
 
 
 
