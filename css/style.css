@@ -1,6 +1,5 @@
-body {
-    /* background-color: #004aad; */
-    /* background-color: black; */
+* {
+    box-sizing: border-box;
     font-family: 'Chivo', sans-serif;
 }
 
@@ -11,7 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #004aad;
-    width: 100%;
+    width: 100vw;
     height: calc(var(--vh, 1vh) * 100);
     margin: auto;
     position: absolute;
