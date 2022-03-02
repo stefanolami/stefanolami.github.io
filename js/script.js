@@ -13,7 +13,7 @@ window.addEventListener("resize", resizeOps);
 
 const personal = document.querySelector('.personal');
 const projects = document.querySelector('.projects');
-const projectsBtn = document.querySelector('.projects-btn');
+const projectsBtn = document.querySelectorAll('.projects-btn');
 const getInTouch = document.querySelector('.getintouch');
 const hiddenContacts = document.querySelector('.hidden-contacts');
 const arrow = document.querySelector('.arrow');
@@ -39,14 +39,16 @@ arrow.addEventListener('click', () => {
     hiddenContacts.style.display = 'none';
 })
 
-projectsBtn.addEventListener('click', () => {
+projectsBtn.forEach(element => {
+    element.addEventListener('click', event => {
     showProjects();
+    })
 })
 
 backToMe.forEach(element => {
     element.addEventListener('click', event => {
       showPersonal();
-    })
+    })      
 })
 
 
@@ -55,15 +57,11 @@ backToMe.forEach(element => {
 
 
 
-/* const mqLarge  = window.matchMedia( '(min-width: 700px)' );
+const mqMedium  = window.matchMedia( '(min-width: 600px)' );
 
- if (mqLarge.matches) {
-     console.log('matches!')
-        figCaption.addEventListener('mouseenter', () => {
-            figCaption.textContent = 'Click on my face to know more about me!';
-        });
-        
-        figCaption.addEventListener('mouseleave', () => {
-            figCaption.textContent = 'Click on my face to know...';
-        });
-    } */
+if (mqMedium.matches) {
+    getInTouch.src = './images/getintouch.png';
+} else {
+    getInTouch.src = './images/getintouch-black.png';
+}
+     
