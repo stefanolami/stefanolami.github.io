@@ -60,11 +60,17 @@ backToMe.forEach(element => {
 
 const mqMedium  = window.matchMedia( '(min-width: 600px)' );
 
-if (mqMedium.matches) {
-    getInTouch.src = './images/getintouch.png';
-    profilePic.src ='./images/portfolio-alex-2.png';
-} else {
-    getInTouch.src = './images/getintouch-black.png';
-    profilePic.src ='./images/portfolio-alex-mobile.png';
-}
+/* const handlePictureChange = () => {
+    if (mqMedium.matches) {
+        getInTouch.src = './images/getintouch.png';
+        profilePic.src ='./images/portfolio-alex-2.png';
+    } else {
+        getInTouch.src = './images/getintouch-black.png';
+        profilePic.src ='./images/portfolio-alex-mobile.png';
+    }
+} */
+
+window.onresize = handlePictureChange;
+
+
      
