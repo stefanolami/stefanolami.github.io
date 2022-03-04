@@ -47,22 +47,24 @@ h1 {
     margin-left: 10vw;
 }
 
-.title-div button {
+.profilepic-div button {
     display: none;
 }
+
+
 
 .projects-btn {
     color: #cfb9ff;
     font-weight: bold;
-    font-size: 0.9rem;
-    width: 30%;
+    font-size: 4vw;
+    
     background-color: black;
     border: 2px solid black;
-    padding: 5px;
-    position: absolute;
-    top: 40%;
+    padding: 8px;
+    margin-left: 10vw;
+    
     cursor: pointer;
-    z-index: 1;
+    
 }
 
 .contacts {
@@ -79,7 +81,7 @@ h1 {
 }
 
 .getintouch {
-    height: 50px;
+    height: 15vw;
     cursor: pointer;
 }
 
