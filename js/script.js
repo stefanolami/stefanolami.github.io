@@ -60,15 +60,15 @@ backToMe.forEach(element => {
 
 const mqMedium  = window.matchMedia( '(min-width: 600px)' );
 
-/* const handlePictureChange = () => {
+const handlePictureChange = () => {
     if (mqMedium.matches) {
         getInTouch.src = './images/getintouch.png';
-        profilePic.src ='./images/portfolio-alex-2.png';
+        /* profilePic.src ='./images/portfolio-alex-2.png'; */
     } else {
         getInTouch.src = './images/getintouch-black.png';
-        profilePic.src ='./images/portfolio-alex-mobile.png';
+        /* profilePic.src ='./images/portfolio-alex-mobile.png'; */
     }
-} */
+}
 
 window.onresize = handlePictureChange;
 
