@@ -108,9 +108,9 @@ svg {
     background-color: black;
     width: 100vw;
     margin: auto;
-    /* position: absolute;
+    position: absolute;
     top: 0;
-    left: 0; */
+    left: 0;
     grid-template-areas: 
     'science backtome1'
     'science .'
@@ -340,11 +340,12 @@ p {
 
         .projects {
             display: none;
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: repeat(6, calc(100% / 6));
             grid-template-rows: 50% 50%;
             background-color: black;
             width: 100vw;
             margin: auto;
+            padding: 20px;
             position: absolute;
             top: 0;
             left: 0;
@@ -354,8 +355,8 @@ p {
         }
 
         .back-to-me {
-            height: 60px;
-            margin-top: 60px;
+            height: 40px;
+            margin-top: 5vh;
         }
 
         #back-to-me-1 {
