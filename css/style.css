@@ -353,6 +353,10 @@ p {
 
 @media only screen and (min-width: 1024px) {
     
+    .personal {
+        align-items: center;
+    }
+
     h1 {
         font-size: 7vh;
         line-height: 6vh;
@@ -366,10 +370,74 @@ p {
         padding: 9px;
         margin-left: 7vh;
     }
+
+    .profilepic-div {
+        width: 70%;
+        margin-top: 2vh;
+    }
+
+    .getintouch {
+        height: 10vh;
+    }
+
+    .arrow {
+        width: 11vh;
+        margin-left: 2vh;
+        margin-bottom: 1vh;
+    }
+
+    svg {
+        height: 6vh;
+        margin-left: 1vh;
+    }
+
+    .projects {
+        height: 100%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-    .personal {
-        background-color: aliceblue;
+    .profilepic-div {
+        width: 40vw;
+    }
+
+    h1 {
+        width: 40%;
+        font-size: 4vw;
+        line-height: 3.5vw;
+        margin-top: 3vw;
+        margin-left: 10vw;
+    }
+
+    .projects-btn {
+        font-size: 1.7vw;
+        width: 40%;
+        padding: 9px;
+        margin-left: 10vw;
+    }
+
+    .contacts {
+        position: absolute;
+        bottom: -14%;
+        width: 100%;
+        left: 22%;
+    }
+
+
+    .back-to-me {
+        height: 70px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+
+    .skills img {
+        width: 40px;
     }
 }
+    

@@ -18,7 +18,6 @@ const getInTouch = document.querySelector('.getintouch');
 const hiddenContacts = document.querySelector('.hidden-contacts');
 const arrow = document.querySelector('.arrow');
 const backToMe = document.querySelectorAll('.back-to-me');
-const profilePic = document.querySelector('.profile-pic')
 
 
 
@@ -58,17 +57,19 @@ backToMe.forEach(element => {
 
 
 
-const mqMedium  = window.matchMedia( '(min-width: 1084px)' );
+const mqMedium  = window.matchMedia( '(min-width: 1200px)' );
 
 const handlePictureChange = () => {
     if (mqMedium.matches) {
         getInTouch.src = './images/getintouch.png';
-        /* profilePic.src ='./images/portfolio-alex-2.png'; */
     } else {
         getInTouch.src = './images/getintouch-black.png';
-        /* profilePic.src ='./images/portfolio-alex-mobile.png'; */
     }
 }
+
+
+handlePictureChange();
+
 
 window.onresize = handlePictureChange;
 
