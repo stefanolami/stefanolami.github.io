@@ -58,7 +58,7 @@ backToMe.forEach(element => {
 
 
 
-const mqMedium  = window.matchMedia( '(min-width: 600px)' );
+const mqMedium  = window.matchMedia( '(min-width: 1084px)' );
 
 const handlePictureChange = () => {
     if (mqMedium.matches) {
